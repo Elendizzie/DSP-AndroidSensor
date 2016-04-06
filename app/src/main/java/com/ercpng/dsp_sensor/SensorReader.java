@@ -36,7 +36,7 @@ public class SensorReader implements SensorEventListener {
 
     @Override
     public void onSensorChanged(SensorEvent event) {
-        if (event.sensor.getType() == Sensor.TYPE_ACCELEROMETER)
+        if (event.sensor.getType() == Sensor.TYPE_LINEAR_ACCELERATION)
         {
             lastAccelData[0] = event.values[0];
             lastAccelData[1] = event.values[1];
